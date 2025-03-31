@@ -2,9 +2,9 @@ import CustomerCard from '../components/CustomerCard';
 
 const mockCustomers = [
   { id: '1', name: 'John Doe', email: 'john@example.com', company: 'Tech Corp' },
-  { id: '2', name: 'Jane Smith', email: 'jane@example.com', company: 'Design Co' },
-  { id: '3', name: 'Mike Johnson', email: 'mike@example.com', company: 'Marketing Inc' },
-  { id: '4', name: 'Sarah Williams', email: 'sarah@example.com', company: 'Dev Solutions' },
+  { id: '2', name: 'Jane Doe', email: 'jane@example.com', company: 'Design Co' },
+  { id: '3', name: 'Mike Tyson', email: 'mike@example.com', company: 'Marketing Inc' },
+  { id: '4', name: 'Lebron James', email: 'lbj@example.com', company: 'NBA' },
 ];
 
 const Customers = () => {

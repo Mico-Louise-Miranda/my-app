@@ -12,7 +12,7 @@ const App = () => {
           <Sidebar />
         </div>
         <div className="w-full ml-64">
-          <div className="min-h-screen bg-gray-100">
+          <div className="min-h-screen bg-green-400">
             <div className="w-full h-full px-8 py-6">
               <Routes>
                 <Route path="/" element={<Dashboard />} />
