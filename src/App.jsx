@@ -35,7 +35,7 @@ const App = () => {
         </div>
         {/* Main content area with margin to accommodate the sidebar */}
         <div className="w-full ml-64">
-          <div className="min-h-screen bg-green-400">
+          <div className="min-h-screen bg-gray-900">
             <div className="w-full h-full px-8 py-6">
               {/* Route definitions that map URLs to specific components */}
               <Routes>
