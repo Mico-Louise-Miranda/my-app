@@ -1,12 +1,12 @@
 import { useParams, Link } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 
-const mockCustomers = [
+const mockEmployees = [
   {
     id: "1",
-    name: "John Doe",
+    name: "Joey Gabiana",
     email: "john@example.com",
-    company: "Tech Corp",
+    company: "NVSU",
     role: "CEO",
     phone: "09090909090",
     address: "123 Business St, Tech City",
@@ -40,19 +40,19 @@ const mockCustomers = [
   },
 ];
 
-const Details = () => {
+const DetailsEmployee = () => {
   const { id } = useParams();
-  const customer = mockCustomers.find((c) => c.id === id);
+  const employee = mockEmployees.find((e) => e.id === id);
 
-  if (!customer) {
+  if (!employee) {
     return (
       <div className="w-full">
-        <h1 className="text-3xl font-bold text-red-600">Customer not found</h1>
+        <h1 className="text-3xl font-bold text-red-600">Employee not found</h1>
         <Link
-          to="/customers"
+          to="/employees"
           className="text-blue-500 hover:text-blue-700 mt-4 inline-block"
         >
-          Back to Customers
+          Back to Employees
         </Link>
       </div>
     );
@@ -61,15 +61,15 @@ const Details = () => {
   return (
     <div className="w-full">
       <Link
-        to="/customers"
+        to="/employees"
         className="flex items-center gap-2 text-blue-500 text-lg font-semibold hover:text-blue-700 mb-8"
       >
-        <FaArrowLeft /> Back to Customers
+        <FaArrowLeft /> Back to Employees
       </Link>
 
       <div className="bg-black rounded-lg shadow-md p-8 w-full border-2 border-gray-900">
         <h1 className="text-3xl font-bold text-gray-400 mb-8">
-          {customer.name}
+          {employee.name}
         </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -78,13 +78,13 @@ const Details = () => {
               Contact Information
             </h2>
             <p className="text-gray-500 mb-2">
-              <strong>Email:</strong> {customer.email}
+              <strong>Email:</strong> {employee.email}
             </p>
             <p className="text-gray-500 mb-2">
-              <strong>Phone:</strong> {customer.phone}
+              <strong>Phone:</strong> {employee.phone}
             </p>
             <p className="text-gray-500 mb-2">
-              <strong>Address:</strong> {customer.address}
+              <strong>Address:</strong> {employee.address}
             </p>
           </div>
 
@@ -93,10 +93,10 @@ const Details = () => {
               Company Information
             </h2>
             <p className="text-gray-500 mb-2">
-              <strong>Company:</strong> {customer.company}
+              <strong>Company:</strong> {employee.company}
             </p>
             <p className="text-gray-500 mb-2">
-              <strong>Role:</strong> {customer.role}
+              <strong>Role:</strong> {employee.role}
             </p>
           </div>
         </div>
@@ -105,4 +105,4 @@ const Details = () => {
   );
 };
 
-export default Details;
+export default DetailsEmployee;

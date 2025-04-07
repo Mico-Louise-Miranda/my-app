@@ -55,6 +55,14 @@ const Sidebar = () => {
               >
                 <FaTasks className="text-xl" /> Task Manager
               </Link>
+              <li>
+                <Link
+                  to="/employees"
+                  className="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-gray-700 transition-colors"
+                >
+                  <FaUsers className="text-xl" /> Employees
+                </Link>
+              </li>
             </li>
           </ul>
         </nav>

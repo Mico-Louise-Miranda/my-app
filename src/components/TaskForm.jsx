@@ -61,7 +61,7 @@ const TaskForm = ({ onAddTask }) => {
           className="bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-lg transition-colors"
           aria-label="Add task"
         >
-          <FaPlus />
+          Save{" "}
         </button>
       </div>
     </form>

@@ -17,6 +17,8 @@ import Dashboard from "./pages/Dashboard";
 import Customers from "./pages/Customers";
 import Details from "./pages/Details";
 import Tasks from "./pages/Tasks";
+import Employees from "./pages/Employees";
+import DetailsEmployee from "./pages/DetailsEmployee";
 
 /**
  * App Component
@@ -43,6 +45,8 @@ const App = () => {
                 <Route path="/customers" element={<Customers />} />
                 <Route path="/customers/:id" element={<Details />} />
                 <Route path="/tasks" element={<Tasks />} />
+                <Route path="/employees" element={<Employees />} />
+                <Route path="/employees/:id" element={<DetailsEmployee />} />
               </Routes>
             </div>
           </div>
